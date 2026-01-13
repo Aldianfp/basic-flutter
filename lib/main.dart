@@ -45,6 +45,8 @@ class _TodoPageState extends State<TodoPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Simple Todo App'),
+        elevation : 0.5,
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -63,7 +65,7 @@ class _TodoPageState extends State<TodoPage> {
                 const SizedBox(width: 8),
                 ElevatedButton(
                   onPressed: addTodo,
-                  child: const Text('Add'),
+                  child: const Text('Tambah'),
                 ),
               ],
             ),
